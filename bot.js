@@ -23,8 +23,6 @@ if (message.content === '*help') {
       .addField("***server :recycle:**","**لـ معلومات السيرفر**")
       .addField("***roles :medal: **","**مسح محادثات الشات**")
       .addField("***say :arrows_counterclockwise:**","**لـ يكرر الكلام اللى تقوله**")
-      .addField("***time :alarm_clock:**","**لـ معرفة الساعة**")
-      .addField("***date **","**لـ معرفة التاريخ**")
       .addField("***$ticket **","**لـ لأنشاء تذكرة او شات للمساعدة**")    
       .addField("****invitebot **","**لـ لأنشاء تذكرة او شات للمساعدة**")
       .addField("**** اسئلة **","** *لعبة اسئلة* **")
