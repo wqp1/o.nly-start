@@ -1803,9 +1803,9 @@ const Sra7a = [
 });
 
 client.on("message", message => {
-  let prefix = "#";
+  let prefix = "*";
   if (!(message.author.bot) && message.channel.type == "text")
-    if (message.content.startsWith(`${prefix}getScreenShareLink`))
+    if (message.content.startsWith(`${prefix}getscreensharelink`))
       if (message.member.voiceChannel) message.channel.send(`https://discordapp.com/channels/${message.guild.id}/${message.member.voiceChannel.id}`);
       else message.channel.send(`**يجب عليك ان تكون في الروم الذي تريد جلب رابط مشاركة بالفيديو خاص به**`);
 });
