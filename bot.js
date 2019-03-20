@@ -1606,7 +1606,7 @@ const adkar = [
 ]
 client.on('message', message => {
 if (message.author.bot) return;
-if (message.content.startsWith(prefix + "ادكار")) {
+if (message.content.startsWith(prefix + "اذكار")) {
   if(!message.channel.guild) return;
 var client= new Discord.RichEmbed()
 .setTitle("اذكار")
