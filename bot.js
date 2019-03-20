@@ -328,7 +328,7 @@ client.on("message", message => {
                                                             .setColor("#008000")
                                 .setDescription(":white_check_mark: | Delete " + args[1] + " Message!")
                                                                                         message.delete("..");
-                                message.channel.sendEmbed(x5bz2);
+                                message.channel.sendEmbed(iRealKsA);
                             }
                           }
 });
@@ -1339,7 +1339,7 @@ client.channels.find('id', '556117815627874314').setName("لك");
 client.channels.find('id', '556117815627874314').setName("اجمل");
 client.channels.find('id', '556117815627874314').setName("الأوقات.");
 client.channels.find('id', '556117815627874314').setName("Welcome To Mmlkh");
-  }, 20000);
+  }, 70000);
 });
 
 client.on('guildMemberRemove', member => {
