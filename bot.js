@@ -393,7 +393,7 @@ const Ex = [
 });
 
 					client.on('message', function(message) {
-	let mohammad = client.channels.get("398980811707383832");
+	let mohammad = client.channels.get("557974837121777683");
 	let gamer = message.content.split(" ");  
 	if(message.author.bot) return;
   if(message.content.startsWith("انجوي")) return mohammad.send("`هناك شخص ذكر اسمك هل تريدرؤية اسمك؟`").then(msg => {
