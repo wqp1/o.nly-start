@@ -1647,4 +1647,10 @@ client.on("message", message => {
       if (message.member.voiceChannel) message.channel.send(`https://discordapp.com/channels/${message.guild.id}/${message.member.voiceChannel.id}`);
       else message.channel.send(`**يجب عليك ان تكون في الروم الذي تريد جلب رابط مشاركة بالفيديو خاص به**`);
 });
+
+client.on('message', message => {
+            if (message.content === 'احبك') {
+			  message.channel.sendFile("https://e.top4top.net/p_1170e195l1.gif"); 
+            }
+         });
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
