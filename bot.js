@@ -403,140 +403,7 @@ client.on("message", message => {
   } //////// iRealKsA
 }); //////// iRealKsA
 
-client.on('message', msg => { ///////////// ireaksa 
 
-  const at_reply = ('<@' + msg.author.id + '>  '); ///////////// ireaksa 
-
-  if (msg.author.bot) return; /////////////ireaksa 
-
-  if (msg.content === prefix + 'ping') { /////////////ireaksa
-      msg.channel.send(at_reply + 'pong  ' + `${ Math.round(client.ping) }` + 'ms');
-      console.log('pong  ' + `${ Math.round(client.ping) }` + 'ms');
-  };
- 
-  if (msg.content === prefix + '^avatar') { ///////////// ireaksa 
-      msg.channel.send(at_reply + msg.author.avatarURL); ///////////// ireaksa 
-  };
-
-  if (msg.content === prefix + 'id') { ///////////// ireaksa  
-      msg.channel.send(at_reply + msg.author.id); ///////////// ireaksa
-  };
-
-  if (msg.content === prefix + 'ch_id') { ///////////// ireaksa
-      msg.channel.send(at_reply + msg.channel.name + '  ' + '<' + msg.channel.id + '>'); ///////////// ireaksa 
-  }; ///////////// ireaksa 
- 
-}); ///////////// ireaksa`
-
-client.on("message", message => {//حقوق iRealKsA♕
-    if (message.author.bot) return;//حقوق iRealKsA♕
-    if(message.content.startsWith(prefix + 'cv')) {//حقوق iRealKsA♕
-        if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");//حقوق iRealKsA♕
-        let FireKing1 = new Discord.RichEmbed()//حقوق iRealKsA♕
-        .setTitle("**اختار هل انت متاكد من انشاء الروم؟؟**")//حقوق iRealKsA♕
-       .setDescription(`**
-       ✅ | يب
-       ❎ | لا
-       **`)//حقوق iRealKsA♕
-        message.channel.send(FireKing1).then(b => {//حقوق iRealKsA♕
-            b.react('✅')//حقوق iRealKsA♕
-            .then(() => b.react('❎'))//حقوق iRealKsA♕
-            .then(() =>b.react('❎'))//حقوق iRealKsA♕
-let reaction2Filter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;//حقوق iRealKsA♕
-let reaction1Filter = (reaction, user) => reaction.emoji.name === '❎' && user.id === message.author.id;//حقوق iRealKsA♕
-//حقوق iRealKsA♕
-let reaction1 = b.createReactionCollector(reaction1Filter, { time: 12000 });//حقوق iRealKsA♕
-let reaction2 = b.createReactionCollector(reaction2Filter, { time: 12000 });//حقوق iRealKsA♕
-reaction2.on("collect", r => {//حقوق iRealKsA♕
-    let args = message.content.split(" ").slice(1);//حقوق iRealKsA♕
-    message.guild.createChannel(args.join(' '),'voice');//حقوق iRealKsA♕
-    let FireKing2 = new Discord.RichEmbed()//حقوق iRealKsA♕
-    .setColor(0x00AE86)//حقوق iRealKsA♕T
-    .setTimestamp()//حقوق iRealKsA♕
-    .setDescription(`تم عمل روم صوتي بي نجاح`)//حقوق iRealKsA♕
-.setFooter(`Alpha Codes For Ever`)//حقوق 
-message.channel.send(FireKing2);//حقوق iRealKsA♕
-    })//حقوق iRealKsA♕
-//حقوق iRealKsA♕
-    reaction1.on("collect", r => {//حقوق iRealKsA♕
-        let FireKing4 = new Discord.RichEmbed()//حقوق iRealKsA♕
-        .setColor(0x00AE86)//حقوق iRealKsA♕
-        .setTimestamp()//حقوق iRealKsA♕
-        .setDescription(`تم الغاء الامر ✖️`)//حقوق iRealKsA♕
-        .setFooter(`Alpha Codes For Ever`)//حقوق iRealKsA♕
-message.channel.send(FireKing4)//حقوق iRealKsA♕
-    })//حقوق iRealKsA♕
-})//حقوق iRealKsA♕
-    }//حقوق iRealKsA♕
-//حقوق iRealKsA♕
-}); //حقوق FireKingYT
-
-client.on("message",async message => {
-if(message.content === 'اقتراح'){//الامر
-var shopc = message.guild.channels.find("name","اقتراح")
-  if(!shopc) return message.reply("لايوجد روم بأسم اقتراح **")
-    let اقتراح= '';
-      let fillter = m => m.author.id === message.author.id
-      
-     
-
-      await message.channel.send("** أكتب قتراحك الى سيرفر **").then(e => {
-           message.channel.awaitMessages(fillter, { time: 60000, max: 1                                    
-})
-     .then(co => {
-       اقتراح = co.first().content;
-        co.first().delete();
-     
-let desc = '';
-        
-e.edit("** أكتب اسمك **").then(e => {
-  message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
-
-     .then(co => {
-       desc = co.first().content;
-        co.first().delete();
-e.edit("Done").then(e => {
-  shopc.send(`@everyone <:heart:> @here
-${message.guild.name}:ᴱˣ: **__قتراح__** :arrow_down:
-
-======================
-**__هى هو الاقتراح__**
----------------------
-
- ** ${قتراح} **
-
-======================
-
-**القتراح من:** **${desc}**
-
-======================
-
-**تم الارسال بواسطة:** ${message.author} `)
-  })
-})
-  })
-})
-  })
-           
-      
-  
-     
-  
-      
-           
-}
-});
-
-client.on('message', message => {
-     if (message.author.bot) return;
-    if (message.content.startsWith("رابط")) {
-        message.channel.createInvite({
-        thing: true,
-        maxUses: 1,
-        maxAge: 3600,
-    }).then(invite =>
-      message.author.sendMessage(invite.url)
-    )
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
           .setDescription(" تم أرسال الرابط برسالة خاصة ")
@@ -552,8 +419,6 @@ client.on('message', message => {
       message.author.sendEmbed(Embed11)
     }
 });
- 
- 
  
 client.on("guildMemberAdd", (member) => {
     let channel = member.guild.channels.get("498138689361149952");
@@ -618,8 +483,8 @@ var color = message.content.split(" ")[1];
   let embed = new Discord.RichEmbed()
   .setColor(color)
   .setDescription(tt)
-  message.channel.send(embed).catch(Julian =>{console.log('`Error`: ' + Julian);
-message.channel.send("`Error`:" + Julian)
+  message.channel.send(embed).catch(Julian =>{console.log('`Error`: ' + iRealKsA);
+message.channel.send("`Error`:" + iRealKsA)
     })
   }
   });
