@@ -1650,7 +1650,7 @@ client.on("message", message => {
 
 client.on('message', message => {
             if (message.content === 'احبك') {
-			  message.channel.sendFile("https://e.top4top.net/p_1170e195l1.gif"); 
+			  message.channel.sendFile("https://f.top4top.net/p_1175xcj7s1.jpg"); 
             }
          });
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
