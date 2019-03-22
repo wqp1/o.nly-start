@@ -1647,38 +1647,4 @@ client.on("message", message => {
       if (message.member.voiceChannel) message.channel.send(`https://discordapp.com/channels/${message.guild.id}/${message.member.voiceChannel.id}`);
       else message.channel.send(`**يجب عليك ان تكون في الروم الذي تريد جلب رابط مشاركة بالفيديو خاص به**`);
 });
-
-client.on('message', message => {
-            if (message.content === 'احبك') {
-			  message.channel.sendFile("https://f.top4top.net/p_1175xcj7s1.jpg"); 
-            }
-         });
-
-
-
-client.on("message", message => {
-                      if(message.content === 'رابط' ) {
-						  message.channel.send('**شيك الخاص يحلو 😉**').then(msg => {
-							  msg.edit('وش فيك منتظر رح شوف الكود فالخاص')
-						  
-						  });
-                        message.channel.createInvite({
-                        thing: true,
-                        maxUses: 10,
-                        maxAge: 86400
-                        }).then(invite =>
-       
-							   message.author.sendMessage(invite.url)
-							  
-                             )						 
-					}});
-
-client.on("message", message => {
-                      if(message.content === 'هايء' ) {
-						  message.channel.send('**شيك الخاص يحلو 😉**').then(msg => {
-							  msg.edit('وش فيك منتظر رح شوف  فالخاص')
-                                          });
- message.author.sendMessage(هاياط ياحلوة اتمنى لك يوم جميل )
-                            }
-});
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
