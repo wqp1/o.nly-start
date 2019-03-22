@@ -1679,4 +1679,6 @@ client.on("message", message => {
 							  msg.edit('وش فيك منتظر رح شوف  فالخاص')
                                           });
  message.author.sendMessage(هاياط ياحلوة اتمنى لك يوم جميل )
+                            }
+});
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
