@@ -392,34 +392,6 @@ const Ex = [
  }
 });
 
-					client.on('message', function(message) {
-	let mohammad = client.channels.get("557974837121777683");
-	let gamer = message.content.split(" ");  
-	if(message.author.bot) return;
-  if(message.content.startsWith("انجوي")) return mohammad.send("`هناك شخص ذكر اسمك هل تريدرؤية اسمك؟`").then(msg => {
-    msg.react("✅")
-    msg.react("❌")
-.then(() => msg.react('❌'))
-.then(() =>msg.react('✅'))
-let reaction1Filter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;
-let reaction2Filter = (reaction, user) => reaction.emoji.name === '❌' && user.id === message.author.id;
-let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
-let reaction2 = msg.createReactionCollector(reaction2Filter, { time: 12000 });
-reaction1.on("collect", r => {
-   let Rembed = new Discord.RichEmbed()
-   .setThumbnail(message.author.avatarURL)
-   .addField("**# - الرسالة:**",gamer,true)
-   .addField("**# -  الشخص:**",message.author.tag,true)
-   .addField("**# - الوقت:**",message.createdAt,true)   
-   mohammad.send(Rembed)
-   
-})
-reaction2.on("collect", r => {
-    mohammad.send("**# - Canceled!**");
-});
-  });
-});
-
 client.on("message", message => {
   if (message.channel.type === "*dm") { //////// iRealKsA
 
