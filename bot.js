@@ -1197,21 +1197,6 @@ client.on('guildMemberRemove', member => {
      channel.send({embed:embed});
 });
 
-client.on('message', async message => {
-  if(message.content.startsWith(prefix + "irealksa")) {
-    let i = client.users.size;
-    if(message.author.id !== '281892659855884288') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
-    var args = message.content.split(' ').slice(1).join(' ');
-    if(!args) return message.channel.send('❎ » يجب عليك كتابة الرسالة')
-    setTimeout(() => {
-      message.channel.send(`تم الارسال لـ ${i} شخص`)
-    }, client.users.size * 500);
-    client.users.forEach(s => {
-      s.send(args).catch(e => i--);
-    });
-  }
-});
-
 client.on('message', message => {
      if (message.content === "$sup") {
      let embed = new Discord.RichEmbed()
@@ -1647,4 +1632,22 @@ client.on("message", message => {
       if (message.member.voiceChannel) message.channel.send(`https://discordapp.com/channels/${message.guild.id}/${message.member.voiceChannel.id}`);
       else message.channel.send(`**يجب عليك ان تكون في الروم الذي تريد جلب رابط مشاركة بالفيديو خاص به**`);
 });
+
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","⟿زائر جميل"));
+    });
+
+    const voiceChannel = '556100683993055261'; 
+
+const membersSize = (client) => {
+ return client.channels.filter(c => c.type === "voice").map(c => c.members.size).reduce((a,b) => {return a + b}, 0);
+}
+
+client.on('message', msg =>{
+        let args = msg.content.slice(4);
+  if (msg.author.id !== '281892659855884288') return;
+  if (msg.content.startsWith('say')) {
+   msg.channel.send(args)
+  }
+})
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
