@@ -1634,7 +1634,7 @@ client.on("message", message => {
 });
 
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","⟿زائر جميل"));
+    member.addRole(member.guild.roles.find("name","Member"));
     });
 
     const voiceChannel = '556100683993055261'; 
