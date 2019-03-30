@@ -1824,4 +1824,40 @@ if(message.content.startsWith("-slots")) {
   message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
 }
 });//iRealKsA
+
+client.on('message', message => {//iRealKsA
+if (message.content === 'مزاجي') { 
+       if (Math.floor((Math.random() * 15) + 1) === 1) {//iRealKsA
+           message.reply('%90😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 2) {//iRealKsA
+           message.reply('%0😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 3) {
+           message.reply('%20😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 4) {//iRealKsA
+           message.reply('%50😍 :)');
+       }else if (Math.floor((Math.random() * 15) + 1) === 5) {//iRealKsA
+           message.reply('%70😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 6) {//iRealKsA
+           message.reply('%80😍');//Toxic Codes
+       }else if (Math.floor((Math.random() * 15) + 1) === 7) {
+           message.reply('%95😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 8) {
+           message.reply('%81😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 9) {//iRealKsA
+           message.reply('%50😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 10) {//iRealKsA
+           message.reply('%35😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 11) {
+           message.reply('%13😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 12) {
+           message.reply('%100😍');//Toxic Codes
+       }else if (Math.floor((Math.random() * 15) + 1) === 13) {//iRealKsA
+           message.reply('%1😍');//Toxic Codes
+       }else if (Math.floor((Math.random() * 15) + 1) === 14) {//iRealKsA
+           message.reply('%99😍');
+      }else if (Math.floor((Math.random() * 15) + 1) === 15) {//iRealKsA
+           message.reply('%3😍');//iRealKsA
+       }//iRealKsA
+  }//iRealKsA
+});//iRealKsA
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
