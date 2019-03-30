@@ -1709,6 +1709,6 @@ client.on('message', msg => {
 }
 })
 client.on('ready', () => { 
-client.channels.get("اي دي الروم").join();
+client.channels.get("556117815627874314").join();
     });
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
