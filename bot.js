@@ -1718,4 +1718,5 @@ client.channels.get('561684552095891497').edit({name : •Member ${member.guild.
 client.on("guildMemberRemove", (member) => {
 client.channels.get('561684552095891497').edit({name : •Member ${member.guild.memberCount} •});
 })
+
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
