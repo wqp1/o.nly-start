@@ -1733,4 +1733,12 @@ if (message.content === 'مزاجي') {
        }//iRealKsA
   }//iRealKsA
 });//iRealKsA
+
+client.on('message', msg => {//iRealKsA
+  if(msg.content === 'اه')//iRealKsA
+              setTimeout(function() {  //iRealKsA
+msg.reply(' لالاعيب كذا يالبى احبك')//tiRealKsA
+              }, 00)//iRealKsA
+});//iRealKsA
+
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
