@@ -1650,4 +1650,10 @@ client.on('message', msg =>{
    msg.channel.send(args)
   }
 })
+
+client.on('message', msg => {
+if (msg.content === 'اه يعور') {
+msg.reply("لالا الا عيب مايصلح كذا يالبى")
+}
+});
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
