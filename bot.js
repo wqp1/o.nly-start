@@ -1163,20 +1163,20 @@ connect(gateway)
 	
 	client.on("ready", async  => {
 setInterval(function(){
-client.channels.find('id', '556117815627874314').setName("م");
-client.channels.find('id', '556117815627874314').setName("مر");
-client.channels.find('id', '556117815627874314').setName("مرحب");
-client.channels.find('id', '556117815627874314').setName("مرحبا");
-client.channels.find('id', '556117815627874314').setName("بك");
-client.channels.find('id', '556117815627874314').setName("في");
-client.channels.find('id', '556117815627874314').setName("سيرفر..");
-client.channels.find('id', '556117815627874314').setName("شباب ");
-client.channels.find('id', '556117815627874314').setName("المملكة");
-client.channels.find('id', '556117815627874314').setName("نتمنى ");
-client.channels.find('id', '556117815627874314').setName("لك");
-client.channels.find('id', '556117815627874314').setName("اجمل");
-client.channels.find('id', '556117815627874314').setName("الأوقات.");
-client.channels.find('id', '556117815627874314').setName("Welcome To Mmlkh");
+client.channels.find('id', '562994252158730241').setName("م");
+client.channels.find('id', '562994252158730241').setName("مر");
+client.channels.find('id', '562994252158730241').setName("مرحب");
+client.channels.find('id', '562994252158730241').setName("مرحبا");
+client.channels.find('id', '562994252158730241').setName("بك");
+client.channels.find('id', '562994252158730241').setName("في");
+client.channels.find('id', '562994252158730241').setName("سيرفر..");
+client.channels.find('id', '562994252158730241').setName("شباب ");
+client.channels.find('id', '562994252158730241').setName("المملكة");
+client.channels.find('id', '562994252158730241').setName("نتمنى ");
+client.channels.find('id', '562994252158730241').setName("لك");
+client.channels.find('id', '562994252158730241').setName("اجمل");
+client.channels.find('id', '562994252158730241').setName("الأوقات.");
+client.channels.find('id', '562994252158730241').setName("Welcome To Mmlkh");
   }, 70000);
 });
 
